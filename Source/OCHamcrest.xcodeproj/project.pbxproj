@@ -307,6 +307,7 @@
 		8761119A1C0611E200C50BE3 /* HCGenericTestFailureReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = BB33391EC19272E15C3D2E1A /* HCGenericTestFailureReporter.h */; };
 		8761119B1C0611E200C50BE3 /* HCSenTestFailureReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = BB33339BAC2DACD2306832A8 /* HCSenTestFailureReporter.h */; };
 		8761119C1C0611E200C50BE3 /* NSInvocation+OCHamcrest.h in Headers */ = {isa = PBXBuildFile; fileRef = BB3339BE4C0ECEAB7169772A /* NSInvocation+OCHamcrest.h */; };
+		876111A21C06184800C50BE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 876111A11C06184800C50BE3 /* Foundation.framework */; };
 		BB33301A68F74D210C803FEA /* HCIsNil.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3335CC804D0A774E5F1041 /* HCIsNil.m */; };
 		BB333020F5ED4E3979BA1714 /* NSInvocation+OCHamcrest.h in Headers */ = {isa = PBXBuildFile; fileRef = BB3339BE4C0ECEAB7169772A /* NSInvocation+OCHamcrest.h */; };
 		BB33302772CACC61A1B4DB74 /* HCTestFailureReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = BB333528C8E2ED8489ACB161 /* HCTestFailureReporter.m */; };
@@ -643,11 +644,11 @@
 		74FDDD141A3FF39900177999 /* HCThrowsException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCThrowsException.m; sourceTree = "<group>"; };
 		77C7B8761429361200DE60CC /* HCHasPropertyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCHasPropertyTests.m; sourceTree = "<group>"; };
 		876110601C0604E100C50BE3 /* OCHamcrest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCHamcrest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		876110621C0604E100C50BE3 /* OCHamcrest-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCHamcrest-iOS.h"; sourceTree = "<group>"; };
 		876110641C0604E100C50BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		876110691C0604E100C50BE3 /* OCHamcrest-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OCHamcrest-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8761106E1C0604E100C50BE3 /* OCHamcrest_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCHamcrest_iOSTests.m; sourceTree = "<group>"; };
 		876110701C0604E100C50BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		876111A11C06184800C50BE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		BB333034CD6A38647E176A9A /* HCAnyOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCAnyOf.h; sourceTree = "<group>"; };
 		BB33303898210A59268030C8 /* HCDoubleReturnGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HCDoubleReturnGetter.m; path = Helpers/ReturnValueGetters/HCDoubleReturnGetter.m; sourceTree = "<group>"; };
 		BB333049BE335209B4207B2A /* HCIsDictionaryContaining.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HCIsDictionaryContaining.m; path = ../Library/Collection/HCIsDictionaryContaining.m; sourceTree = "<group>"; };
@@ -830,6 +831,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876111A21C06184800C50BE3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -915,6 +917,7 @@
 		087601E413440806001B439B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				876111A11C06184800C50BE3 /* Foundation.framework */,
 				087601EA13440807001B439B /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -1023,7 +1026,6 @@
 		876110611C0604E100C50BE3 /* OCHamcrest-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				876110621C0604E100C50BE3 /* OCHamcrest-iOS.h */,
 				876110641C0604E100C50BE3 /* Info.plist */,
 			);
 			path = "OCHamcrest-iOS";
@@ -2309,10 +2311,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "OCHamcrest-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.hamcrest.OCHamcrest-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = org.hamcrest.OCHamcrest;
 				PRODUCT_NAME = OCHamcrest;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2356,10 +2357,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "OCHamcrest-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.hamcrest.OCHamcrest-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = org.hamcrest.OCHamcrest;
 				PRODUCT_NAME = OCHamcrest;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
