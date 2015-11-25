@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8761105F1C0604E100C50BE3"
-               BuildableName = "OCHamcrest-iOS.framework"
+               BuildableName = "OCHamcrest.framework"
                BlueprintName = "OCHamcrest-iOS"
                ReferencedContainer = "container:OCHamcrest.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8761105F1C0604E100C50BE3"
-            BuildableName = "OCHamcrest-iOS.framework"
+            BuildableName = "OCHamcrest.framework"
             BlueprintName = "OCHamcrest-iOS"
             ReferencedContainer = "container:OCHamcrest.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8761105F1C0604E100C50BE3"
-            BuildableName = "OCHamcrest-iOS.framework"
+            BuildableName = "OCHamcrest.framework"
             BlueprintName = "OCHamcrest-iOS"
             ReferencedContainer = "container:OCHamcrest.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8761105F1C0604E100C50BE3"
-            BuildableName = "OCHamcrest-iOS.framework"
+            BuildableName = "OCHamcrest.framework"
             BlueprintName = "OCHamcrest-iOS"
             ReferencedContainer = "container:OCHamcrest.xcodeproj">
          </BuildableReference>
